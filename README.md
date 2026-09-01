@@ -9,7 +9,7 @@ role-based access, pagination, validation and Swagger documentation.
 - Java 17
 - Spring Boot 3
 - Spring Data JPA (Hibernate)
-- MySQL (H2 for tests)
+- 'MySQL (H2 for tests)
 - Spring Security with JWT and Refresh Tokens
 - JUnit 5 and Mockito
 - Swagger / OpenAPI

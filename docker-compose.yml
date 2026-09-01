@@ -5,7 +5,7 @@ services:
     image: mysql:8
     container_name: product-db
     environment:
-      MYSQL_DATABASE: productdb
+      MYSQL_DATABASE: product
       MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
@@ -24,9 +24,9 @@ services:
       db:
         condition: service_healthy
     environment:
-      DB_URL: jdbc:mysql://db:3306/productdb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
+      DB_URL: jdbc:mysql://db:3306/product?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
       DB_USERNAME: root
-      DB_PASSWORD: root
+      DB_PASSWORD: Ajay@123
     ports:
       - "8080:8080"
 
